@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Serenity in Focus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d4e6d3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header, .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4a7c59;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 10px;
+            margin-right: 40px;
+        }
+
+        .nav-bar a {
+            color: #4a7c59;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #3b5a40;
+            color: white;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto; /* This centers the content */
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            flex-grow: 1;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form .submit-btn {
+            grid-column: span 2;
+            background-color: #4a7c59;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form .submit-btn:hover {
+            background-color: #3b5a40;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+        }
+
+        .contact-info table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .contact-info th, .contact-info td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .contact-info th {
+            background-color: #4a7c59;
+            color: white;
+        }
+
+        .contact-info td {
+            background-color: #f9f9f9;
+        }
+
+        .social-media {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            color: #4a7c59;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #3b5a40;
+        }
+
+        .footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo and Navigation -->
+    <div class="header">
+    <img src="/IMAGES/Website_Logo.jpg" alt="Serenity in Focus Logo" class="logo">
+        <div class="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/HTML/Gallery.html">Gallery</a>
+            <a href="/HTML/Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h1>Contact</h1>
+        <p>If you’d like to inquire about services, book a session, or request custom photography packages, please fill out the contact form below. We’ll get back to you as soon as possible!</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST">
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <label for="service">Photography Service</label>
+                <select id="service" name="service">
+                    <option value="portrait">Portrait Photography</option>
+                    <option value="event">Event Photography</option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="custom">Custom Photography Packages</option>
+                </select>
+            </div>
+            <div>
+                <label for="newsletter">Sign up for our newsletter</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+            <div>
+                <label>Preferred Contact Method</label>
+                <input type="radio" id="emailContact" name="contactMethod" value="email">
+                <label for="emailContact">Email</label>
+                <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+                <label for="phoneContact">Phone</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <!-- Contact Information Table -->
+        <div class="contact-info">
+            <h2>Business Contact Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Serenity in Focus Photography</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>contact@serenityinfocus.com</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>123 Photography St, Cityville, Country</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>0454 345 732</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer with Social Media Links and Copyright -->
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/serenityinfocus" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/serenityinfocus" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/serenityinfocus" target="_blank">Twitter</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Serenity in Focus Photography. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for handling form submission -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const messageContainer = document.createElement("div");
+            messageContainer.style.textAlign = "center";
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                messageContainer.innerHTML = "<h2>Thank you for your message! We will get back to you soon.</h2>";
+                form.parentNode.appendChild(messageContainer);
+                form.reset(); // Optional: reset the form fields after submission
+            });
+        });
+    </script>
+
+</body>
+</html>

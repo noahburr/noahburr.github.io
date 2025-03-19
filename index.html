@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity in Focus | Home</title>
+    <style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ensures content fills the page */
+}
+
+.wrapper {
+    flex: 1; /* This ensures content takes all available space */
+    max-width: 1200px;  /* Maximum width for all content */
+    padding: 0 20px;    /* Padding on the sides to prevent content from touching the edges */
+    margin: 0 auto;     /* Center the content */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4e6d3;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a7c59;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-bar a {
+    color: #4a7c59;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgb(255, 237, 237);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #3b5a40;
+    color: white;
+}
+
+.content {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        max-height: 200px; /* Adjust banner height for smaller screens */
+    }
+}
+
+/* Footer Style */
+.footer {
+    background-color: #4a7c59;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* This ensures footer is at the bottom */
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header with Logo and Navigation -->
+        <div class="header">
+        <img src="/IMAGES/Website_Logo.jpg" alt="Serenity in Focus Logo" class="logo">
+            <div class="nav-bar">
+                <a href="/index.html">Home</a>
+                <a href="/HTML/Gallery.html">Gallery</a>
+                <a href="/HTML/Contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!-- Banner Image -->
+        <img src="/IMAGES/Banner_IMG_1358_edited.jpg" alt="Serenity in Focus Banner" class="banner">
+        
+        <div class="content">
+            <h1>Welcome to Serenity in Focus</h1>
+            <p>At Serenity in Focus, we capture the beauty of the world around us. Specialising in breathtaking outdoor and scenic photography, we bring landscapes to life with expert lighting, composition, and artistic vision. Our photographs are a reflection of nature’s serenity and the intricate details that make each moment unique.</p>
+
+            <p>In addition to our portfolio, we offer professional photography services for those looking to create lasting memories in stunning outdoor locations. Whether you need high-quality prints for sale or a customised photography session, we are here to bring your vision into focus.</p>
+            
+            <!-- Add your main homepage image here -->
+            <img src="/IMAGES/Mi_IMG_2600_edited.jpg" alt="Serenity in Focus Photography" class="main-image">
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <p>Follow us on social media:</p>
+            <!-- Add your social media links -->
+            <a href="https://www.facebook.com"><img src="/IMAGES/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="/IMAGES/instagram_logo.webp" alt="Instagram"></a>
+            <a href="https://www.youtube.com"><img src="/IMAGES/1384060.png" alt="YouTube"></a>
+        </div>
+    </div>
+
+    <!-- Sitemap Section -->
+    <div class="sitemap">
+        <h2>Site Map</h2>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/HTML/Gallery.html">Gallery</a></li>
+            <li><a href="/HTML/Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Footer with Copyright Notice -->
+    <div class="footer">
+        <p>&copy; 2025 Serenity in Focus. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

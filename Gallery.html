@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity in Focus | Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4e6d3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: flex-start;
+        }
+
+        .header, footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4a7c59;
+            padding: 15px 20px;
+            width: 100%;
+        }
+
+        .logo {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-bar a {
+            color: #4a7c59;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #3b5a40;
+            color: white;
+        }
+
+        .content {
+            max-width: 100%;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin-top: 0;  /* Remove any margin above the heading */
+        }
+
+        .gallery {
+            display: block;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%; /* Ensure the images scale based on available space */
+            max-width: 800px; /* Limit the width of the images */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Description Style */
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a7c59;
+            color: white;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: 100%; /* Ensure images fill available space on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header with Logo and Navigation -->
+        <div class="header">
+            <img src="/IMAGES/Website_Logo.jpg" alt="Serenity in Focus Logo" class="logo">
+            <div class="nav-bar">
+                <a href="/index.html">Home</a>
+                <a href="/HTML/Gallery.html">Gallery</a>
+                <a href="/HTML/Contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="content">
+            <h1>Gallery</h1>
+            <p>Welcome to my gallery! Here are some of my favourite photographs, showcasing the beauty of nature and outdoor landscapes. These images are available for purchase. Please access the contact page in the navigation bar above to contact me!</p>
+
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="/IMAGES/Gi1_IMG_1755_edited.jpg" alt="Photograph 1">
+                    <div class="description">
+                        <p>This is a photo of a beautiful sunset on the Sunshine Coast, the clouds providing cover from the final light of the day, with housing and buildings apparent.</p> <!-- Add your text description for the first image here -->
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="/IMAGES/Gi2_IMG_1718_edited.jpg" alt="Photograph 2">
+                    <div class="description">
+                        <p>This is a photo of local street-life at night. It was taken on a rainy day, so the roads and buildings have a covering of rain water. The various lights gain the attention of every viewer. </p> <!-- Add your text description for the second image here -->
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="/IMAGES/Gi3_IMG_1817_edited.jpg" alt="Photograph 3">
+                    <div class="description">
+                        <p>This is a shot of a scenic view, overlooking the vast distance, surrounded by green mountains and clouds.</p> <!-- Add your text description for the third image here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Serenity in Focus. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
